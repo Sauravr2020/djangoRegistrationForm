@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Data Received</title>
+    <style>
+      html,
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #2c003e;
+        color: #fff;
+        overflow-x: hidden;
+      }
+      .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: #1a0026;
+        border-bottom: 1px solid #ccc;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 24px;
+        color: #ffccff;
+      }
+      main {
+        padding: 100px 20px 20px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .data-container {
+        padding: 20px;
+        background-color: #3b004d;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+      .data-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      .data-group label {
+        flex: 1;
+        min-width: 150px;
+        font-weight: bold;
+      }
+      .data-group span {
+        flex: 2;
+        padding: 8px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        border: 1px solid #cc66ff;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: #1a0026;
+        border-top: 1px solid #ccc;
+        width: 100%;
+        bottom: 0;
+      }
+      .footer h3 {
+        margin: 0;
+        font-size: 15px;
+        color: rgb(166, 166, 194);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>PURNEA UNIVERSITY</h1>
+    </div>
+
+    <main>
+      <div class="data-container">
+        <div class="data-group">
+          <label for="student-name">Student Name:</label>
+          <span>{{ form_data.student_name }}</span>
+        </div>
+        <div class="data-group">
+          <label for="father-name">Father's Name:</label>
+          <span>{{ form_data.father_name }}</span>
+        </div>
+        <div class="data-group">
+          <label for="mother-name">Mother's Name:</label>
+          <span>{{ form_data.mother_name }}</span>
+        </div>
+        <div class="data-group">
+          <label for="dob">Date of Birth:</label>
+          <span>{{ form_data.dob }}</span>
+        </div>
+        <div class="data-group">
+          <label>Gender:</label>
+          <span>{{ form_data.gender }}</span>
+        </div>
+        <div class="data-group">
+          <label for="address">Full Address:</label>
+          <span>{{ form_data.address }}</span>
+        </div>
+        <div class="data-group">
+          <label for="religion">Religion:</label>
+          <span>{{ form_data.religion }}</span>
+        </div>
+        <div class="data-group">
+          <label for="nationality">Nationality:</label>
+          <span>{{ form_data.nationality }}</span>
+        </div>
+        <div class="data-group">
+          <label for="phone">Phone Number:</label>
+          <span>{{ form_data.phone }}</span>
+        </div>
+        <div class="data-group">
+          <label for="eid">EID:</label>
+          <span>{{ form_data.eid }}</span>
+        </div>
+        <div class="data-group">
+          <label for="blood-group">Blood Group:</label>
+          <span>{{ form_data.blood_group }}</span>
+        </div>
+        <div class="data-group">
+          <label>Marital Status:</label>
+          <span>{{ form_data.marital_status }}</span>
+        </div>
+        <div class="data-group">
+          <label for="course">Course Name:</label>
+          <span>{{ form_data.course }}</span>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer">
+      <h3>DECLARATION:</h3>
+    </div>
+  </body>
+</html>
