@@ -4,9 +4,7 @@
     {
       "src": "my_app/wsgi.py",
       "use": "@vercel/python",
-      "config": {
-        "distDir": "build"
-      }
+      "config": {"maxlambdaSize": "15mb", "runtime": "python-3.10.0"}
     }
   ],
   "routes": [
