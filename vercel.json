@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "my_app/wsgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "my_app/wsgi.py"
+    }
+  ]
+}
